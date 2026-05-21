@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.10"
-  version: "1.5.0"
+  version: "1.6.0"
 
 package:
   name: e3sm_compareview
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/e/e3sm_compareview/e3sm_compareview-${{ version }}.tar.gz
-  sha256: 059efc440e41785292b070e769833b825998dd91a81c820d9de7e7be67f0802a
+  sha256: 12f8bdeaf4b77bb08fea2f3394ef5a2231f74d12af0cd3c13f98ec52774b05d8
 
 build:
   number: 0
@@ -29,27 +29,16 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy <2.4
-    - trame >=3.12
-    - trame-rca >=2.3.1
-    - trame-vuetify >=3.1
-    - pyproj >=3.6.1
-    - netcdf4 >=1.6.5
-    - trame-dataclass >=2.0.2
-    - trame-components
-    - trame-tauri >=0.6.2
-    - pillow
-    - e3sm-quickview >=2.5.1
+    - e3sm-quickview >=2.7.7
 
 tests:
   - python:
       imports:
         - e3sm_compareview
       pip_check: true
-      python_version: ${{ python_min }}.*
   - requirements:
       run:
         - pip
-        - python ${{ python_min }}.*
     script:
       - compareview --help
       - quickcompare --help
