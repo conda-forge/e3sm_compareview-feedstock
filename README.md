@@ -144,6 +144,3 @@ Feedstock Maintainers
 
 * [@willdunklin](https://github.com/willdunklin/)
 
-
-<!-- dummy commit to enable rerendering -->
-
