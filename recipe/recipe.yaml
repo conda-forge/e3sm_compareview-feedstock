@@ -36,7 +36,6 @@ tests:
       imports:
         - e3sm_compareview
       pip_check: true
-      python_version: ${{ python_min }}.*
   - requirements:
       run:
         - pip
