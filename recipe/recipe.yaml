@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.11"
-  version: "1.8.0"
+  version: "1.8.1"
 
 package:
   name: e3sm_compareview
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/e/e3sm_compareview/e3sm_compareview-${{ version }}.tar.gz
-  sha256: cb027c0860e7dee046201a27c393c73001711f090b6a64d6f9362f72c56910dd
+  sha256: 4eaaae04d6388d5c68a6bcbd5c36b9dc7c95ae285905df53d947445926188ce3
 
 build:
   number: 0
