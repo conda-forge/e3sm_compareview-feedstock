@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.11"
-  version: "1.11.0"
+  version: "1.11.2"
 
 package:
   name: e3sm_compareview
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/e/e3sm_compareview/e3sm_compareview-${{ version }}.tar.gz
-  sha256: f7b7289a8394fc31f8e37e1bc0be65fc1c047507ff70516454bd95827ff6fce5
+  sha256: 76fe1bfa08f9121c82366be519b1394b6db19c3d7a6489b3b12ec24c8b4080ad
 
 build:
   number: 0
@@ -28,10 +28,9 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - e3sm-quickview >=2.9.4
-    - trame-colormaps >=1.6.1
-    - numpy <2.4
     - hdf5 <2
+    - e3sm-quickview >=2.10.1
+    - trame-colormaps >=1.7.2
 
 tests:
   - python:
